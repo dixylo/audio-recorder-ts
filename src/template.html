@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Records and plays back audio">
+  <meta name="keywords" content="audio,record,playback,typescript,HTML,CSS">
+  <meta name="author" content="Frank Lin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <div class="container">
+    <div class="button-container">
+      <button id="start" class="button">Record</button>
+      <button id="stop" class="button">Stop</button>
+    </div>
+    <p id="instruction"></p>
+    <audio id="player" controls>
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
